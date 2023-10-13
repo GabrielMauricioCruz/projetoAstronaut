@@ -1,0 +1,341 @@
+/* *************Global Styles************** */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+:root{
+  --base-font: 'Mulish', sans-serif;
+  font-size: 62.5%;
+}
+
+body{
+  font-family: var(--base-font);
+  background: #F9F4FB;
+}
+
+/* ------------ first-section ------------- */
+#first-section{
+  padding: 0 3.4rem 9.3rem 3.2rem;
+  width: 100%;
+  text-align: center;
+}
+
+h1{
+  color: #B52184;
+  line-height: 4rem;
+  font-family: var(--base-font);
+  font-size: 3.2rem;
+  font-weight: 900;
+  margin: 1.7rem 0 0.5rem 0;   
+}
+
+#first-section .first-section-text p{
+  color: #312D64;
+  font-family: var(--base-font);
+  font-size: 2.0rem;
+  font-weight: 600;
+  line-height: 2.5rem;
+  margin-bottom: 3.5rem;
+}
+
+
+#first-section .first-section-text .button-down{
+  width: 5.8rem;
+  height: 10.5rem;
+  border: 4px solid var(--accent-color);
+  border-radius: 76rem;
+  display: flex; 
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  transition: filter 300ms;
+}
+
+#first-section .first-section-text .button-down:hover {
+  filter: brightness(0.7);
+}
+#first-section .first-section-text .button-down img{
+  width: 3rem ;
+}
+
+
+/* ------------- card-section --------------- */
+
+
+#card-section{
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(96deg, #343193 0%, #302C63 99.68%);
+  padding: 5.3rem 3.9rem 5.5rem;
+  display: grid;
+  gap: 4.9rem;
+}
+
+
+#card-section .card{
+  border-radius: 2rem;
+  background: #FFF;
+  
+  padding: 2.6rem;
+}
+
+#card-section .card img{
+  width: 8rem;
+  margin-bottom: 3.3rem;
+}
+
+#card-section .card .card-text{
+  width: 26.5rem;
+}
+
+#card-section .card .card-text h3 {
+  
+  color: #B52184;
+  
+  font-family: var(--base-font);
+  font-size: 2.9rem;
+  
+  line-height: 3.7rem;
+  font-weight: 900;
+  
+  margin-top: 3.3rem;
+  
+}
+
+#card-section .card .card-text p{
+  color: #312D64;
+  
+  font-family: var(--base-font);
+  font-size: 1.6rem;
+  
+  font-weight: 600;
+  line-height: 2.0rem;
+  
+  margin-top: 1.9rem;
+  
+}
+
+/* form  */
+button, 
+input, 
+fieldset, 
+textarea{
+  border: none;
+  background: none;
+  font-family: var(--base-font);
+}
+
+
+/* --------------- contact-section --------------- */
+
+
+#contact-section{
+  width: 100%;
+  height: 100%;
+  padding: 7.8rem 3.9rem 6.5rem;
+}
+
+#contact-section form .input-wrapper{
+  margin-bottom: 2.4rem;
+
+}
+
+#contact-section form h2{
+  color: #B52184;
+  font-family: var(--base-font);
+  font-size: 3.2rem;
+  line-height: 4rem;
+  font-weight: 900;
+
+  margin-bottom: 4.3rem;
+}
+
+#contact-section form input,
+#contact-section form textarea {
+  border-radius: 1.6rem;
+  border: 0.15rem solid #312D64;
+
+  width: 100%;
+  padding: 1.2rem 1.6rem 1.6rem;
+  font-weight: 600;
+  font-size: 1.6rem;
+  
+}
+
+#contact-section form input::placeholder,
+#contact-section form textarea::placeholder{
+  color: #312D64;
+}
+
+#contact-section form textarea {
+  height: 12.6rem;
+  resize: none;
+}
+
+
+#contact-section form input{
+  padding-left: 4rem;
+}
+
+
+#contact-section form button{
+  padding: 1.6rem;
+  color: white;
+  
+  font-size: 1.4rem;
+  line-height: 2.4rem;
+  font-weight: 700;
+
+  border-radius: 1.6rem;
+  background: linear-gradient(96deg, #343193 0%, #302C63 99.68%);
+  cursor: pointer;
+  transition: filter 200ms;
+}
+
+#contact form button:hover{
+  filter: brightness(0.9);
+}
+
+
+#name{
+  background: url(./img/image06.svg);
+  background-repeat: no-repeat;
+  background-position: 1.4rem;
+}
+
+#email{
+  background: url(./img/image07.svg);
+  background-repeat: no-repeat;
+  background-position: 1.4rem;
+}
+
+#contact-section .stars{
+  display: none;
+}
+/* --------- footer ------- */
+
+footer{
+  padding: 3.2rem 1.6rem;
+
+  background: linear-gradient(96deg, #343193 0%, #302C63 99.68%);
+}
+
+footer p{
+  color: white;
+  text-align: center;
+  font-family: --base-font;
+  font-size: 1.9rem;
+  font-weight: 600;
+  line-height: 2.4rem;
+}
+
+
+
+/*--------------------- Versão Desktop --------------*/
+
+/* @media */
+
+
+@media (min-width:1440px){
+  
+  #first-section{
+    display: flex;
+    
+    padding: 0 2.9rem 10.3rem 10.9rem;
+    max-height: 83.6rem;
+    
+  }
+
+  #first-section .astronaut img{
+    width: 72rem;
+    height: 73.2rem;
+  }
+
+  
+  #first-section .first-section-text {
+    /* display: flex;
+    flex-direction: column;
+    align-items: start; */
+    order: 1;
+    margin-top: 32rem;
+  }
+
+  #first-section .first-section-text h1{
+    font-size: 5.8rem;
+    line-height: 7.3rem;
+
+    margin: 0 0 0 .8rem;
+  
+  }
+  #first-section .first-section-text p{
+  font-size: 3.2rem;
+  line-height: 2rem;
+  margin-bottom: 17.9rem;
+
+  }
+
+
+  #first-section .first-section-text .button-down{
+    margin: 0;
+    justify-self: flex-end;
+
+  }
+
+  #first-section .astronaut{
+    order: 2;
+  }
+
+  #card-section{
+    grid-template-columns: repeat(3, 1fr);
+    gap: 6rem;
+    padding: 6.4rem 11.1rem 8rem;
+  }
+
+  #card-section .card{
+    padding: 3.2rem;
+    border-radius: 2.4rem;
+  }
+
+
+  #card-section .card img{
+    width: 9.7rem;
+    margin-bottom: 4rem;
+  }
+
+  #card-section .card .card-text h3{
+    font-size: 3.5rem;
+    margin-top: 4rem;
+    margin-bottom: 2.4rem;
+  }
+
+  #contact-section{
+    display: flex;
+    align-items: center;
+    
+    gap: 9.2rem;
+    height: 62.2rem;
+    padding: 0;
+    margin: 0 auto;
+    background: url(./img/image08.png);
+    background-repeat: no-repeat;
+    background-position: right;
+  }
+
+  #contact-section form{
+    flex: 1;
+    margin-left: 10.9rem;
+  }
+  #contact-section .input-wrapper{
+    width: 56.0rem;
+  }
+
+  #contact-section .stars{
+    flex: 1;
+  }
+
+}
